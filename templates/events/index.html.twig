@@ -5,13 +5,13 @@
 {% block body %}
 <div class="container mb-5">
  <h1 class="text-center my-2">Upcoming events</h1>
-    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1" style="gap: 8px">
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1  d-flex justify-content-center" style="gap: 8px">
     {% for event in events %}
         <div class="card" style="width: 18rem;">
             <img src="{{ event.image }}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ event.name }}</h5>
-                <p class="card-text">Date: {{ event.createDate ? event.createDate|date('Y-m-d H:i:s') : '' }}</p>
+                <p class="smth card-text">Date: {{ event.createDate ? event.createDate|date('Y-m-d H:i:s') : '' }}</p>
                 <p class="card-text">Address: {{ event.address }}</p>
                 <a class="btn btn-success" href="{{ path('app_events_show', {'id': event.id}) }}">show more</a>
                 <a class="btn btn-warning" href="{{ path('app_events_edit', {'id': event.id}) }}">edit</a>

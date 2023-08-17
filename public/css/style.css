@@ -1,0 +1,35 @@
+
+
+.navbar {
+    background: rgb(112,18,27);
+background: linear-gradient(94deg, rgba(112,18,27,1) 1%, rgba(255,152,152,1) 49%, rgba(255,255,255,1) 100%);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.events {
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.card {
+    border: 3px solid rgba(138, 0, 0, 0.451);
+    border-radius: 0%;
+}
+
+.card img {
+    border-radius: 0%;
+    margin-top: 3px;
+    height: 12rem;
+}
+
+.footer {
+    background-color: rgb(152, 0, 0);
+    height: 50px;
+}
+
+.footer p {
+    padding-top: 10px;
+}
